@@ -90,3 +90,15 @@ When
 Then
 - The stock is not updated
 - An error message is shown to the user that they do not have the stock management permission
+
+
+# Discussions & Assumptions
+## Requirements
+- Requirements suggest a 1 Product to zero or many Stock Count records. There could be many reasons for this such as different locations or different time intervals at which  a given stock count is active.
+- ASSUMPTION 1: 1 correct active stock count per product in the 'Final solution' 
+- ASSUMPTION 2: Current story (requirement) supports a max of 1 stock count record per product. No validation is applied here assuming that would be the scope of a future story.
+- ASSUMPTION 3: If no stock count is present, assume 0 units of stock
+- ASSUMPTION 4: All or nothing Bulk uploads. If 10 units available and 15 units requested accross multiple opportunities, Sales Reps should decide which opportunities to apply the available to capacity to, without arbitrary logic making this decision.
+
+## Technical Decisions
+- No trigger framework (overkill for the excersie?)
