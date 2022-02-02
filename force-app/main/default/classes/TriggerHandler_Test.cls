@@ -1,4 +1,5 @@
-@isTest
+@isTest 
+@SuppressWarnings('PMD')
 private class TriggerHandler_Test {
 
     /*

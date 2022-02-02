@@ -61,7 +61,7 @@ As a Sales User
 I want the central Stock Count to be updated when an opportunity is lost
 So that I can supply the previously reserved units to other customers
 
-## Story: Amending Available Stock
+## Story: Amending Available Stock (Not Implemented)
 As a System Admin/Integration User
 I want to be able to update the available stock of products
 So that the when new stock is available, it can be added for Sales Reps to sell
@@ -96,9 +96,10 @@ Then
 ## Requirements
 - Requirements suggest a 1 Product to zero or many Stock Count records. There could be many reasons for this such as different locations or different time intervals at which  a given stock count is active.
 - ASSUMPTION 1: 1 correct active stock count per product in the 'Final solution' 
-- ASSUMPTION 2: Current story (requirement) supports a max of 1 stock count record per product. No validation is applied here assuming that would be the scope of a future story.
+- ASSUMPTION 2: Current story/implementation supports a max of 1 stock count record per product. No validation is applied here assuming that would be the scope of a future story.
 - ASSUMPTION 3: If no stock count is present, assume 0 units of stock
 - ASSUMPTION 4: All or nothing Bulk uploads. If 10 units available and 15 units requested accross multiple opportunities, Sales Reps should decide which opportunities to apply the available to capacity to, without arbitrary logic making this decision.
 
 ## Technical Decisions
-- No trigger framework (overkill for the excersie?)
+- Basic Trigger framework used. 
+- Packaging not used (overkill/time)
