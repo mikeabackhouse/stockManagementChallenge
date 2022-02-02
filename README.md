@@ -2,9 +2,11 @@
 # Epic: Stock Management
 
 # Story: Stock Reservation
-As a Sales User
-I want the central Stock Count to be updated when I reserve units for my customers
-So that my customers can be confident that quoted products can be delivered as soon as an order is conformed
+- As a Sales User
+- I want the central Stock Count to be updated when I reserve units for my customers
+- So that my customers can be confident that quoted products can be delivered as soon as an order is conformed
+
+
 ## Scenarios
 ### Scenario 1: Opportunity Stock Consumption
 Given 
@@ -52,19 +54,19 @@ When
 - I add an Opportunity Product Line for Product A with the Quantity of 1 to each Opportunity (in bulk / a single operation)
 
 Then 
-- The Opportunity Product Line Items are added
--  The Product A stock count is reduced to 200
+- The Opportunity Product Line Items are not added
+- The Product A stock count remains at 100
 
 
 ## Story: Stock Management for Lost Opportunity (Not Implemented)
-As a Sales User
-I want the central Stock Count to be updated when an opportunity is lost
-So that I can supply the previously reserved units to other customers
+- As a Sales User
+- I want the central Stock Count to be updated when an opportunity is lost
+- So that I can supply the previously reserved units to other customers
 
 ## Story: Amending Available Stock (Not Implemented)
-As a System Admin/Integration User
-I want to be able to update the available stock of products
-So that the when new stock is available, it can be added for Sales Reps to sell
+- As a System Admin/Integration User
+- I want to be able to update the available stock of products
+- So that the when new stock is available, it can be added for Sales Reps to sell
 
 ### Scenario 1: Stock Manager Allowed to Update Stock
 Given
